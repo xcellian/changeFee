@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean name="propertiesService" class="egovframework.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
+    <property name="properties">
+      <map>
+        <entry key="pyAppPath" value="C:/Anaconda3/python.exe"/>
+        <entry key="pyScriptPathPerm" value="C:/wpk_services/extapps/changeFee/pyScript/"/>
+        <entry key="pyScriptNamePerm" value="script.py"/>
+        <entry key="plAppPath" value="C:/Perl64/bin/perl.exe"/>
+        <entry key="plScriptPathDayWeek" value="C:/wpk_services/extapps/changeFee/plScript/"/>
+        <entry key="plScriptNameThuNight" value="01_FRIDAY/thursdaynight_P79.pl"/>
+        <entry key="plScriptNameFriNight" value="02_WEEKEND/fridaynight_weekend.pl"/>
+        <entry key="plScriptNameSatNight" value="03_SUN_P129/saturdaynight_P129.pl"/>
+        <entry key="plScriptNameSunNight" value="04_WEEKDAY/sundaynight_WEEKDAY.pl"/>
+        <entry key="plScriptNameMonNight" value="05_MON_P123/mondaynight_P123.pl"/>
+        </map>
+    </property>
+  </bean>
+</beans>
